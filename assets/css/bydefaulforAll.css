@@ -1,0 +1,117 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        } 
+ body>*{
+                padding: 10px;
+                
+            }
+            ul{
+               list-style: none; 
+            }
+            .header{
+                background-color: rgb(0, 0, 126);
+                color:white;
+                grid-area: header;
+                position:sticky;
+                top:0;
+            }
+            section{
+                /* border-top:1px solid navy; */
+                text-align: center;
+            }
+            .skills{
+                grid-area: skills;
+               /* background-color: #EDE4D9;*/
+               background:linear-gradient(to left,white,rgb(119, 95, 255));
+                text-align: left;
+                
+            }
+            .main{
+                grid-area:main;
+                /* background-color: #FEFAF6;*/
+                
+                background:linear-gradient(to bottom,white,rgb(119, 95, 255));
+            }
+            .footer{
+                grid-area:footer;
+                background-color: darkblue;
+                color:white;
+                text-align: center;
+                padding: 10px;
+            }
+            #project{
+                grid-area: project;
+                /* background-color: #EDE4D9;; */
+                background:linear-gradient(to bottom,white,rgb(119, 95, 255));
+                
+            }
+            #project a{
+                
+                color: #680808;
+            }
+            .project-preview{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                grid-area: projectpreview;
+                background:rgb(235, 235, 235);
+                height: 90vh;
+                padding: 0;
+               
+            }
+            #contact{
+                grid-area: contact;
+                background:linear-gradient(to left,white,rgb(119, 95, 255));
+                 font-size: clamp(10px,5vw,20px);
+               
+            }
+            #about{
+                grid-area: about;
+                background:linear-gradient(to right,white,rgb(119, 95, 255));
+            }
+           .header a{
+                color:white;
+                text-decoration: none;
+            }
+            .logo{
+                min-width:2em;
+                max-width: 6em;
+            }
+        nav ul{
+                display: flex;
+                justify-content: right;
+                gap: 2%;
+            }
+            .logoAndText{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width:80vw;
+            }
+            .header-text{
+                text-align:right;
+                font-size: clamp(.5rem, 4vw, 3rem);
+                text-wrap: nowrap; 
+                color:white;
+            }
+           
+        .skills li::before {
+                content: "🗸 ";
+            }
+            .edu-cards-wrapper{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap:20px;
+            }
+            .edu-cards{
+                background-color: white;
+                box-shadow:rgba(28, 12, 198, 0.774) 0px 0px 50px 0px inset;
+                width:280px;
+                height: 200px;
+                border-radius: 10px;
+                padding: 10px;
+            }

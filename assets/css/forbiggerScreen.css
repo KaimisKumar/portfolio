@@ -1,0 +1,18 @@
+/* for bigger screen than mobile*/
+        @media screen and (min-width:451px){
+            body{
+                min-height:100vh; 
+                display:grid;
+                grid-template-columns: 1fr 3fr;
+                grid-template-areas: 'header header'
+                                    'skills main'
+                                    'project projectpreview'
+                                    'about about'
+                                    'contact contact'
+                                    'footer footer';        
+           
+                 }
+             .header-text p{
+                transform: translate(20%);
+            }
+        }  

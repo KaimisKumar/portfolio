@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>CSS Grid Layout</title>
+        <meta name= "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/calculator.css">
+    </head>
+    <body>
+        <div class="header"><h1>My Interactive Calculator</h1></div>
+        
+        <div class="contener">
+            <h3 id = "instructions" onclick="showInstrut()">Instructions</h3>
+            <div class="calboard" id ="userguide">
+                 <p>Hi! This is a funny and interactive calculator. It will intaract with you when you make any mistake(like Invalid mathematical expressions e.g., 3--2 or 4***3).<br>
+                    To use calculator normally, please enter only valid mathematical expressions. 
+                     Invalid inputs (e.g., 5++4) or incomplete expressions (e.g., 5+) will be counted as mistakes. You can make up to 4 mistakes — after that, the "Try Again" button will disappear, and you will not be able to use the calculator anymore. The only option left will be to refresh the page</p>
+                <button class="close-btn" onclick="hideInstruct()">Close</button>
+                </div>
+            <div class="calboard">
+                    <input type="text" id="screen" disabled placeholder="0">
+                    <div class="keypad">
+                        <input type="button" value="Clear"  id="clear" onclick="display.value='' ">
+                            <input type="button" value = "Backspace"  id="back" onclick="display.value=display.value.slice(0,-1)">
+                            <input type="button" value="1" class="inpbut" onclick="display.value+=1">
+                            <input type="button" value="2" class="inpbut" onclick="display.value+=2">
+                            <input type="button" value="3" class="inpbut" onclick="display.value+=3">
+                            <input type="button" value="+" class="inpbut" onclick="display.value+='+'">
+                            <input type="button" value="4" class="inpbut" onclick="display.value+=4">
+                            <input type="button" value="5" class="inpbut" onclick="display.value+=5">
+                            <input type="button" value="6" class="inpbut" onclick="display.value+=6">
+                            <input type="button" value="-" class="inpbut" onclick="display.value+='-'">
+                            <input type="button" value="7" class="inpbut" onclick="display.value+=7">
+                            <input type="button" value="8" class="inpbut" onclick="display.value+=8">
+                            <input type="button" value="9" class="inpbut" onclick="display.value+=9">
+                            <input type="button" value="X" class="inpbut" onclick="display.value+='*'">
+                            <input type="button" value="0" class="inpbut" onclick="display.value+=0">
+                            <input type="button" value="." class="inpbut" onclick="display.value+='.'">
+                            <input type="button" value="=" class="inpbut" onclick="calculate()">
+                            <input type="button" value="/" class="inpbut" onclick="display.value+='/' ">
+                    </div>
+                    <div class="reaction">
+                           <img src="images/1.gif"  id="img" alt ="funny calcultor reacting emoji">
+                            <p id = "action" ></p>
+                            <button onclick="displaykeypad()" id= "tryagain" class="close-btn" > Try Again</button>
+                    </div>
+            </div>
+        </div>
+        <div class="footer"><h3>&copy 2026 Kaimis Viseliyas. All Rights Reserved</h3></div>
+    </body>
+    <script src="js/calculator.js"> </script>
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+div{
+    background:linear-gradient(to top,white,rgb(119, 95, 255));
+    text-align: center;
+    padding: 2%;
+    color:darkblue;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.contener{
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.calboard{
+    height: 80%;
+    max-height: 500px;
+    min-height: 400px;
+    max-width: 350px;
+    min-width: 300px;
+    border-radius:3%;
+    
+}
+#screen{
+    width:98%;
+    height: 10%;
+    border-radius:10px;
+    text-align:right;
+    font-size: 2em;
+    background-color: white;
+}
+.keypad{
+    background-image: linear-gradient(rgb(119, 95, 255),rgb(239, 221, 221));
+    height:80%;
+    border:none;
+    margin-top: 10%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:2.5em;
+    border-radius: 3%;
+    
+}
+.reaction{
+    min-height:80%;
+    border-radius:5%;
+    margin-top: 10%;
+    background-color: white;
+    display:none;
+    justify-content: center;  /* js ke through iska display :grid ban jata hai*/
+    position: relative;
+        
+}
+#clear{
+    grid-column-start: 1;
+    grid-column-end: 3;               
+}
+#back{
+    grid-column-start: 3;
+    grid-column-end :5;
+}
+#clear,#back, .inpbut{
+    border:1px solid white;
+    border-radius:10px;
+    font-size: .7em;
+        background-image: linear-gradient(to top,rgb(119, 95, 255),white);
+    box-shadow: 2px 2px 2px white;
+    color: rgb(1, 1, 92);
+    cursor: pointer;
+}
+#clear:active,#back:active, .inpbut:active{
+    box-shadow: 0px 0px;
+    margin:3px;
+    border:none;
+    color:white;
+}
+#img{
+    width: 70%;
+    margin: auto;
+}
+#tryagain{
+    position:absolute;
+    top:5%;
+    right: 5%;
+}
+.close-btn{
+    background-image: linear-gradient(to top,rgb(119, 95, 255),white);
+    color:darkblue;
+    height: 30px;
+    padding: 5px;
+    border-radius:40px;
+    cursor: pointer;
+}
+
+#userguide{
+    position:absolute;
+    transform: translateY(-200%);
+    font-size: larger;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+    
+}
+#instructions{
+    text-decoration: underline;
+    cursor: pointer;
+}
+        

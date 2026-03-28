@@ -1,0 +1,120 @@
+/* For Mobile Screen */
+        @media screen and (max-width:450px) {
+            body{
+                min-height:100vh;
+                display: flex;
+                flex-direction: column;
+            }
+            .header-nav{
+               position: absolute;
+               top:100%;
+               opacity: 0;
+               transform: translateY(-10px);
+               /*yaha pahle display none tha lekin uski vajah se transition 
+               nahi lag pa rahi thi isliye ab ise position absolute kar diya hai*/
+            }
+            .nav-button{
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width:25px;
+                min-width: 20px;
+                height: 20px;
+                align-self: flex-end; /* this property for container flexbox means header for mobile*/
+                cursor: pointer;
+                
+            }
+            .bar{
+                background-color:white;
+                height: 4px;
+            }
+
+
+            .mobile-close-btn {
+                position: relative;
+                left:80%;
+                width: 40px;
+                height: 40px;
+                background: none;
+                border:none;
+                cursor: pointer;
+            }
+
+            .mobile-close-btn::before,
+            .mobile-close-btn::after {
+                content: "";
+                position: absolute;
+                top:50%;
+                left:50%;
+                width: 70%;
+                height: 4px;
+                background: #ffffff;
+                transform: translate(-50%,-50%) rotate(45deg);
+            }
+
+            .mobile-close-btn::after {
+                
+                transform: translate(-50%,-50%) rotate(-45deg);
+            }
+
+
+
+
+            .header-text{
+                align-self: flex-start;
+            }
+            .header{
+                display: flex; 
+                align-items: center;
+                justify-content: space-between;
+                
+            }
+            .mobile-head-nav{
+                background-color:rgb(0, 0, 89);
+                width:100%;
+                left:0px;
+                position: absolute; /*yaha position absolute isliye di hai taki ye
+                                    my skill section ko neeche na dhakel de */
+                padding: 10px;
+                transform: translateY(0px);
+                transition: ease 1s;
+            }
+            .mobile-head-nav ul{
+                display: flex;
+                gap:10px;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items:center;
+                
+                
+            }
+            .mobile-head-nav li{
+                border-radius: 10px;
+                width:100%;
+                text-align: center;
+                padding: 5px;
+                box-shadow: 2px 2px 10px white;
+            }
+            .mobile-head-nav li:active{
+               box-shadow: 1px 1px 2px white;
+                
+            }
+            .mobile-head-nav  a{
+                display: block; /* yaha a ko display block isliye diya hai taaki a poora width le sake kyoki ye by default inline block hota hai*/
+               
+            }
+           .mobile-nav-active{
+                display: block;
+            }
+
+
+               .logo{
+            min-width: 2em;
+            max-width: 3em;
+        }
+         .logoAndText{
+           
+            align-items: center;
+           justify-content: flex-start;
+        }
+        }

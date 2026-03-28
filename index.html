@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/bydefaulforAll.css">
+    <link rel="stylesheet" href="assets/css/forbiggerScreen.css">
+    <link rel="stylesheet" href="assets/css/forMobile.css">
+    <title>Kaimis's Portfolio</title>
+
+</head>
+<body>
+    <header class="header" id = "header">
+        <div class="logoAndText">
+            <img src ="assets/images/Myphotologo.png" class="logo" alt ="My Logo">
+            <div class="header-text">
+                <h1>Kaimis Viseliyas</h1>
+                <p>A Web Developer</p>
+            </div>
+        </div>
+            <div class="nav-button" onclick="shownav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+        </div>
+        <nav class="header-nav" id="headNav">
+            <button 
+                type="button" 
+                class="mobile-close-btn" 
+                onclick="closenav()"
+                aria-label="Close menu"
+                id ="closebtn"
+                hidden
+                >
+            </button>
+                <ul>
+                    <li><a href ="#home">Home</a></li>
+                    <li><a href ="#about">About</a></li>
+                    <li><a href = "#project">Project</a></li>
+                    <li><a href = "#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+    </header>
+
+    <section class="skills" id="home">
+        <h1>My Skills:</h1>
+        <ul>
+            <li><strong>Programming Languages:</strong> C++ (OOPs), PHP</li>
+            <li><strong>Web Technologies:</strong> HTML5, CSS3, JavaScript</li>
+            <li><strong>Database:</strong> MySQL (Basic)</li>
+            <li><strong>Tools:</strong> VS Code, WAMP</li>
+            <li><strong>Office Tools:</strong> MS Word, MS Excel, MS PowerPoint</li>
+        </ul>
+    </section>
+
+    <section class="main" >
+        <h1>
+            I’m a passionate web developer building real-world projects with HTML, CSS, and JavaScript.
+        </h1>
+        <br><br>
+        <h3>
+             This portfolio showcases my projects, skills, and learning journey.
+        </h3>
+        <br><br>
+            <h2>Technical Background</h2>
+        <br>
+        <div class="edu-cards-wrapper">
+            <div class="edu-cards"><h3>CITS (CSA Trade)</h3>
+                <p><strong>Institute:</strong> NSTI Kanpur</p>
+                <p><strong>Year:</strong> 2022</p>
+                <p><strong>Score:</strong> 90%</p>
+                <p>Advanced training in Computer Software Application with focus on real-world projects using PHP, MySQL, DBMS, HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="edu-cards"><h3>O Level (Information Technology)</h3>
+                <p><strong>Institute:</strong> NIELIT</p>
+                <p><strong>Year:</strong> 2022</p>
+                <p><strong>Grade:</strong> B</p>
+                <p>Studied information technology fundamentals and improved programming and web development concepts.</p>
+            </div>
+            <div class="edu-cards"><h3>ITI (COPA Trade)</h3>
+                <p><strong>Institute:</strong> Govt. ITI Aligarh</p>
+                <p><strong>Year:</strong> 2020</p>
+                <p><strong>Score:</strong> 94%</p>
+                <p>Learned computer fundamentals and basics of web development including HTML, CSS, and programming concepts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <h1>My Projects</h1>
+        <br><br>
+        <h3>Completed Projects</h3>
+            <ul>
+                <li><a href ="projects/funny-interactive-calculator/" target="prjpreview">Funny Intaractive Calculator</a></li>
+             </ul>
+             <br>
+        <h3>Upcoming Projects</h3>
+             <ul>
+                <li><a href ="projects/mock-test/mocktestpromo.html" target="prjpreview">MockTest</a></li>
+             </ul>
+    </section>
+    <section class="project-preview" >
+        <iframe src="projects/defaultSrcIframe.html" frameborder="0" width="95%" height="95%" title="project preview" name="prjpreview"></iframe>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm Kaimis Viseliyas (officially known as Kaimis Kumar), a web developer focused on creating clean, responsive, and user-friendly websites.
+        </p>
+
+        <p>
+             I work with HTML5, CSS3, and JavaScript, and have basic knowledge of PHP, MySQL, and C++ (OOP). I use tools like VS Code and WAMP to build and test my projects.
+        </p>
+
+        <p>
+            I’m continuously learning and improving my skills by building real-world projects, and I’m always excited to create something meaningful.
+        </p>        
+    </section>
+
+    <section id="contact">
+        <h1>My Contact Details:</h1>
+        <h3>Email: kaimis.kumar207589@gmail.com</h3>
+        <p><a href="https://in.linkedin.com/in/kaimis-kumar-505b24229" style="color:rgb(112, 6, 6)">linkedin</a></p>
+    </section>
+    <footer class="footer"><p>&copy; 2026 Kaimis Viseliyas. All Rights Reserved.</p></footer>
+    <script src="assets/js/indexscript.js"></script>
+</body>
+</html>
