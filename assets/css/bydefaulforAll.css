@@ -99,7 +99,7 @@
             }
            
         .skills li::before {
-                content: "🗸 ";
+                content: "✓ ";
             }
             .edu-cards-wrapper{
                 display:flex;
